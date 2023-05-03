@@ -1,0 +1,315 @@
+body{
+    background-color: black;
+}
+.ARCHI{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 100px;
+}
+.bus{
+box-sizing: border-box;
+position: absolute;
+height: 0px;
+border: 5px solid #FFFFFF;
+border-radius: 4px;
+}
+#busDATA{
+    width: 1100.03px;
+    left: 11px;
+    bottom: 120px;
+    transform: rotate(0deg);
+}
+#busRIM{
+    width: 200px;
+left: 925px;
+bottom: 250px;
+    transform: rotate(-90deg);
+}
+#busRAM{
+    width: 150px;
+left: 650px;
+bottom: 560px;
+    transform: rotate(0deg);
+}
+#busRI{
+    width: 130px;
+left: 450px;
+bottom: 220px;
+    transform: rotate(-90deg);
+}
+#busCO{
+    width: 135.02px;
+left: 600px;
+bottom: 645px;
+    transform: rotate(-90deg);
+}
+#busREG{
+    width: 400px;
+left: 175px;
+bottom: 345px;
+    transform: rotate(-90deg);
+}
+#busREG1{
+    width: 52.01px;
+left: 536.5px;
+bottom: 375px;
+    transform: rotate(-90deg);
+}
+#busREG2{
+    width: 54.08px;
+left: 605px;
+bottom: 375px;
+    transform: rotate(-90deg);
+}
+#busEUAL1{
+    width: 90.5px;
+left: 217px;
+bottom: 200px;
+    transform: rotate(-90deg);
+}
+#busEUAL2{
+    width: 90.5px;
+left: 78px;
+bottom: 200px;
+    transform: rotate(-90deg);
+}
+#busTDA{
+    width: 400px;
+left: 550px;
+bottom: 350px;
+    transform: rotate(-90deg);
+}
+#busACC{
+    width: 392.1px;
+    left: -170px;
+    bottom: 350px;
+    transform: rotate(-90deg);
+}
+#c1{
+    width: 150px;
+    left: 525px;
+    bottom: 410px;
+    transform: rotate(0deg); 
+}
+#c2{
+    width: 290px;
+    left: 440px;
+    bottom: 560px;
+    transform: rotate(90deg); 
+
+}
+#c3{
+    width: 80px;
+    left: 501px;
+    bottom: 700px;
+    transform: rotate(0deg);
+}
+#c4{
+    width: 150px;
+    left: 22px;
+    bottom: 550px;
+    transform: rotate(0deg);
+}
+#c5{
+    width: 70px;
+    left: 140px;
+    bottom: 520px;
+    transform: rotate(90deg);
+}
+.decodeur {
+    position: absolute;
+    height: 0px;
+    border-bottom: 150px solid  #4662c6;
+    border-left:  30px solid transparent;
+    border-right:  30px solid transparent;
+    border-radius: 10px;
+
+  }
+  #ual{
+    width: 150px;
+    bottom: 300px ;
+    left:95px ;
+  }
+  #RIM{
+    width: 200px;
+    border-bottom: 50px solid #a7b6e3;
+    bottom: 370px ;
+    left:900px ;
+    text-align: center;
+    text-rendering: geometricPrecision;
+    transform: rotate(180deg);
+  }
+  #RIM p{
+      transform: rotate(180deg);
+  }
+  #RAM{
+    width: 200px;
+    border-bottom: 50px solid #a7b6e3;
+    bottom: 550px ;
+    left:720px ;
+    transform: rotate(-90deg);
+  }
+
+  .MC{
+    position:absolute;
+    width: 250px;
+    height: 250px;
+    bottom: 450px ;
+    left: 900px;
+    background:#182c5e;
+    border-radius: 4px;
+  }
+  .caseMemoire{
+    position: absolute;
+    width: 250px;
+    visibility: visible;
+    height: 20px;
+    background-color:#4662c6;
+    text-align: center;
+    margin: auto;
+    top: 50%;
+    bottom: 50%;
+  }
+  .REG{
+    position:absolute;
+    height: 25px;
+    background-color:  #a7b6e3;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  #CO{
+    width: 200px;
+    bottom: 725px;
+    left:575px;
+  }
+  #RI{
+    display: grid;
+    width: 240px;
+    bottom: 300px;
+    left: 420px;
+    grid-template-columns: repeat(16,1fr);
+  }
+  #COP{
+     text-align: center;
+    width: auto;
+      grid-column: 6 span;
+      border-color:#FFFFFF;
+  }
+  #MD{
+    text-align: center;
+    width: auto;
+    grid-column: 2 span;
+  }
+  #F{
+    text-align: center;
+    width: auto;
+    grid-column: 1 span;
+  }
+  #W{
+    text-align: center;
+    width: auto;
+    grid-column: 1 span;
+  }
+  #Reg1{
+    text-align: center;
+    width: auto;
+    grid-column: 3 span;
+  }
+  #Reg2{
+    text-align: center;
+    width: auto;
+    grid-column: 3 span;
+  }
+  #ACC{
+    width: 120px;
+    bottom: 455px;
+    left: 135px;
+  }
+  #EUAL1{
+    width: 90px;
+    bottom: 255px;
+    left: 80px;
+  }
+  #EUAL2{
+    width: 90px;
+    bottom: 255px;
+    left: 225px;
+  }
+  #AX{
+    width: 240px;
+    bottom: 770px;
+    background-color:  #182c5e;
+    left: 250px;
+  }
+  #BX{
+    width: 240px;
+    bottom: 740px;
+    background-color:  #182c5e;
+    left: 250px;
+  }
+  #CX{
+    width: 240px;
+    bottom: 710px;
+    left: 250px;
+    background-color:  #182c5e;
+  }
+  #DX{
+    width: 240px;
+    bottom: 680px;
+    left: 250px;
+    background-color:  #182c5e;
+  }
+  #EX{
+    width: 240px;
+    bottom: 650px;
+    left: 250px;
+    background-color:  #182c5e;
+  }
+  #FX{
+    width: 240px;
+    bottom: 620px;
+    left: 250px;
+    background-color:  #182c5e;
+  }
+  #SI{
+    width: 240px;
+    bottom: 590px;
+    left: 250px;
+    background-color:  #182c5e;
+  }
+  #DI{
+    width: 240px;
+    bottom: 560px;
+    left: 250px;
+    background-color:  #182c5e;
+  }
+  #Z{
+    width: 50px;
+    bottom: 500px;
+    left: 50px;
+  }
+  #S{
+    width: 50px;
+    bottom: 450px;
+    left: 50px;
+  }
+  #R{
+    width: 50px;
+    bottom: 400px;
+    left: 50px;
+  }
+  #D{
+    width: 50px;
+    bottom: 350px;
+    left: 50px;
+  }
+  .arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid white;
+    transform: rotate(180deg);
+  }
+
