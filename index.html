@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./img/logo.png">
+    <!--<link href="https://fonts.googleapis.com/css2family=Actor&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>PASSE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--pour les icons-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  </head>
+<body >        
+    <main>
+        <nav>
+            <div class="gr">
+
+              <span class="icon" >
+                <ion-icon name="menu" onclick="Menu(this)" ></ion-icon>
+              </span>
+
+               <span class="logo">
+                  <img src="./img/logo.png" alt="#">
+              </span>
+            </div>
+            <ul class="tap" id="ttt">
+              <li>
+                <a class="tp" href="./Main.html">Accueil</a>
+              </li>
+              <li>
+                <a class="tp" href="./Docs.html">Docs</a>
+              </li>
+              <li>
+                <a class="tp" href="./Aide.html">Aide</a>
+              </li>
+              <li>
+                <a class="tp" href="./About.html">Appropos de nous</a>
+              </li>
+            </ul>
+        </nav>
+         <div class="welcom">
+                <div class="message">
+                  <h3> Bienvenues sur votre endroit PASSE</h3>
+                  <p class="m"> Ce site vous permettera de simuler un ensemble <br>
+                       d’instructions ecrites en langage bas niveau et suivre <br>
+                        le flus de l’information sur une architecture conçue pour un <br>
+                       but pédagogique</p>
+                </div>
+                <div class="cpu">
+                  <img src="./img/cpu.png" alt="">
+                </div>
+         </div>
+         <section class="contain">
+          <div class="carte">
+            <div class="card-image car-1"> </div>
+<h4>Architecture de la machine</h4>
+<a href="#archimg" class="btn"> Go!</a>
+          </div>
+
+          <div class="carte">
+            <div class="card-image car-2"> </div>
+<h4>Programmes</h4>
+<a href="#prg" class="btn">Go!</a>
+          </div>
+
+          <div class="carte">
+            <div class="card-image car-3"> </div>
+<h4>Simulation</h4>
+<a href="#sml" class="btn">Go!</a>
+          </div>
+         </section>
+         <h3>Architecture de la machine</h3>
+         <br>
+         <div id="archimg">
+             <img  src="img/newarchi.png" alt="#">
+         </div>  
+         <a href="https://drive.google.com/drive/u/2/folders/13X6yFpHdp72hRPTCRryVFT0WHUzwNDvW" class="learnmore">Learn more</a>
+         <br>
+         <br>
+         <br>
+         <section class="contain" id="prg">
+          <div class="carte pgm">
+<h3>Title</h3>
+<a href="./Docs.html#prg1" class="btn">Savoir plus</a>
+          </div>
+
+          <div class="carte pgm">
+<h3>Title</h3>
+<a href="./Docs.html#prg2" class="btn">Savoir plus</a>
+          </div>
+
+          <div class="carte pgm">
+<h3>Title</h3>
+<a href="./Docs.html#prg3" class="btn" >Savoir plus</a>
+          </div>
+          <div class="carte pgm">
+            <h3>Title</h3>
+            <a href="./Docs.html#prg4" class="btn">Savoir plus</a>
+                      </div>
+            
+                      <div class="carte pgm">
+            <h3>Title</h3>
+            <a href="./Docs.html#prg5" class="btn">Savoir plus</a>
+                      </div>
+            
+                      <div class="carte pgm">
+            <h3>Title</h3>
+            <a href="./Docs.html#prg6" class="btn">Savoir plus</a>
+                      </div>
+         </section>
+         <br>
+         <br>
+         <br>
+         <h3>Simulation</h3> 
+         <div class="ARCHI" id="arch-id">
+          <div class="start-pause">
+            <ion-icon name="caret-forward-outline" onclick="start(this)"></ion-icon>   
+          </div>
+          <span class="retour" id="return" >
+            <ion-icon name="arrow-undo-outline"></ion-icon>
+          </span>
+          <div class="bus" id="busDATA"> </div>
+          <div class="bus" id="busREG"></div>
+          <div class="bus" id="busRIM"></div>
+          <div class="bus" id="busRAM"></div>
+          <div class="bus" id="busEUAL1"></div>
+          <div class="bus" id="busEUAL2"></div>
+          <div class="bus" id="busACC"></div>
+          <div class="bus" id="busRI"></div>
+          <div class="bus" id="busCO"> </div>
+          <div class="bus" id="busTDA"></div>
+          <div class="bus" id="busREG1"></div>
+          <div class="bus" id="busREG2"></div>
+          <div class="bus" id="c1"></div>
+          <div class="bus" id="c2"></div>
+          <div class="bus" id="c3"></div>
+          <div class="bus" id="c4"></div>
+          <div class="bus" id="c5"></div>
+          <div class="bus" id="incco"></div>
+          <div class="bus" id="LE"></div>
+          <!--les instructions-->
+          <div class="bus" id="Add"></div>
+          <div class="bus" id="Sub"></div>
+          <div class="bus" id="mov"></div>
+          <!---->
+          <div class="decodeur" id="ual"></div>
+          <div class="decodeur" id="RIM"></div>
+          <div class="decodeur" id="RAM"></div>
+          <div class="decodeur" id="SEQ"></div>
+          <div class="MC"></div>
+          <div class="REG" id="CO"> </div>
+          <div class="REG" id="RI"></div>
+          <div class="REG" id="ACC"></div>
+          <div class="REG" id="EUAL1"></div>
+          <div class="REG" id="EUAL2"></div>
+          <div class="REG" id="AX"></div>
+          <div class="REG" id="BX"></div>
+          <div class="REG" id="CX"></div>
+          <div class="REG" id="DX"></div>
+          <div class="REG" id="EX"></div>
+          <div class="REG" id="FX"></div>
+          <div class="REG" id="SI"></div>
+          <div class="REG" id="DI"></div>
+          <div class="REG" id="Z"></div>
+          <div class="REG" id="S"></div>
+          <div class="REG" id="R"></div>
+          <div class="REG" id="D"></div>
+          <div class="glow" id="g1"></div>
+          <div class="glow" id="g2"></div>
+          
+  
+<div class="arrow" id="a1"></div>
+<div class="arrow" id="a2"></div>
+<div class="arrow" id="a3"></div>
+<div class="arrow" id="a4"></div>
+<div class="arrow" id="a5"></div>
+<div class="arrow" id="a6"></div>
+<div class="arrow" id="a7"></div>
+<div class="arrow" id="a8"></div>
+<div class="arrow" id="a9"></div>
+<div class="arrow" id="a10"></div>
+<div class="arrow" id="a11"></div>
+<div class="arrow" id="a12"></div>
+<div class="arrow" id="a13"></div>
+<div class="arrow" id="a14"></div>
+<div class="arrow" id="a15"></div>
+<div class="arrow" id="inc"></div>
+<div class="arrow" id="le"></div>
+<div class="arrow" id="a16"></div>
+<div class="arrow" id="a17"></div>
+<div class="arrow" id="addinst"></div>
+<div class="arrow" id="subinst"></div>
+<div class="arrow" id="movinst"></div>
+  
+  <p id="inctxt"> INC </p>
+  <p id="letxt"> L/E </p>
+  <p id="START"> START </p>
+  <p id="goback"> Go Back</p>
+  <p id="indZ"> Z </p>
+  <p id="indS"> S </p>
+  <p id="indR"> R </p>
+  <p id="indD"> D </p>
+  <p id="seq"> SEQ </p>
+  <p id="AXtxt">AX</p>
+  <p id="BXtxt">BX</p>
+  <p id="CXtxt">CX</p>
+  <p id="DXtxt">DX</p>
+  <p id="EXtxt">EX</p>
+  <p id="FXtxt">FX</p>
+  <p id="DItxt">DI</p>
+  <p id="SItxt">SI</p>
+  <p id="COtxt"> CO </p>
+  <p id="RAMtxt">RAM</p>
+  <p id="RIMtxt">RIM</p>
+  <p id="RItxt">RI</p>
+  <p id="ACCtxt">ACC</p>
+  <p id="EUAL1txt">EUAL1</p>
+  <p id="EUAL2txt">EUAL2</p>
+  <p id="pnt">... 
+  </p>
+
+      </div>
+      <button type="button" id="bu" >click</button>
+         <section class="emulator" id="sml">
+          <div class="option" >
+            <select name="file" id="file">
+              <option selected disabled>fichier</option>
+            <option value="program_1"> program_1 </option>
+            <option value="program_2"> program_2 </option>
+            <option value="program_3"> program_3 </option>
+            <option value="program_4"> program_4 </option>
+            <option value="program_5"> program_5 </option>
+            <option value="program_6"> program_6 </option>
+            </select>
+            <button type="button" id="compile_id">Assembler</button>
+            <button id="run_id">Exécuter</button>
+            <button id="simulate_id">Simuler</button>
+            <button id="help_id">Aide</button>
+
+
+
+
+          </div>
+          <div class="bas">
+            <div class="upload">
+              <!--<div class="upload_img">
+                <img src="./img/upload.png" alt="#">
+              </div>-->
+              <div>
+                <button type = "button" class = "btn-warning"> 
+                  <i class = "fa fa-upload"></i> Importer un fichier
+                  <input type="file" id="fileInput" name="fileInput"  title="titre">
+                  <button type = "button" id="Load" class="loadButton">
+                    <i class="fa fa-file-text-o"></i> Afficher Contenu
+                  </button>
+                  <button type = "button" id="save" class="saveButton">
+                    <i class="fa fa-save"></i> Sauvegarder
+                  </button>
+                  <!--<ion-icon name="cloud-upload-outline"></ion-icon>-->
+              </div>
+            </div>
+             
+              <textarea class="textzone" name="code" id="code" placeholder=" 
+              Exemple: 
+
+          1      ORG  100H 
+          2      SET A 4H
+          3      SET C 0H
+          4      START
+          5      MOV AX , A
+          6      MOV [BX+4], AX
+          7      ADD AX,BX
+          8      MOV C,3H
+          9      STOP "></textarea>
+              <br>
+
+              <div class="messagediv" id="messageDiv"> 
+              </div>
+
+          </div>
+         </section>
+       
+         
+              
+    </main> 
+   
+    <script>
+      function Menu(e){
+        let list = document.getElementById("ttt");
+        if(e.name === 'menu')
+        {
+          e.name = "close";
+          list.style.opacity = '100' ;
+        }
+        else{
+          e.name = "menu" ;
+          list.style.opacity = '0' ;
+        }
+
+      }
+      function start(e){
+        if(e.name === 'caret-forward-outline')
+        {
+          e.name = "stop-circle-outline";
+          simulation();
+        }
+        else{
+          e.name = "caret-forward-outline" ;
+
+        }
+
+      }
+      function simulation(){
+         var co = document.getElementById("CO");
+         var ram = document.getElementById("RAM");
+       /*
+         co.innerText=100;
+         co.style.textAlign="center";
+         co.style.boxShadow="2px 2px 4px white";
+         ram.innerText=100;
+         ram.style.textAlign="center";
+         ram.style.filter="blur()";
+       */
+
+
+
+      }
+    </script>
+    <div class="con">
+    <div id="links"> <p> Site de l'école : <a href="https://www.esi.dz/"> www.esi.dz </a></p></div>
+    <p><i class="fa fa-envelope" style="font-size:36px" ></i> feedback: passefeedback@gmail.com</p>
+  </div>
+  <script type="module" src="./index.js" ></script>
+</body>
+</html>
