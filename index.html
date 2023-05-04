@@ -125,23 +125,56 @@
           <span class="retour" id="return" >
             <ion-icon name="arrow-undo-outline"></ion-icon>
           </span>
-          <div class="bus" id="busDATA"> </div>
-          <div class="bus" id="busREG"></div>
-          <div class="bus" id="busRIM"></div>
-          <div class="bus" id="busRAM"></div>
-          <div class="bus" id="busEUAL1"></div>
-          <div class="bus" id="busEUAL2"></div>
-          <div class="bus" id="busACC"></div>
-          <div class="bus" id="busRI"></div>
-          <div class="bus" id="busCO"> </div>
-          <div class="bus" id="busTDA"></div>
-          <div class="bus" id="busREG1"></div>
-          <div class="bus" id="busREG2"></div>
-          <div class="bus" id="c1"></div>
-          <div class="bus" id="c2"></div>
-          <div class="bus" id="c3"></div>
-          <div class="bus" id="c4"></div>
-          <div class="bus" id="c5"></div>
+          <div class="bus" id="busDATA"> 
+            <div class="dataflux" id="dataDATA"></div>
+          </div>
+          <div class="bus" id="busREG">
+            <div class="dataflux" id="dataREG"></div>
+          </div>
+          <div class="bus" id="busRIM">
+            <div class="dataflux" id="dataRIM"></div>
+          </div>
+          <div class="bus" id="busRAM">
+            <div class="dataflux" id="dataRAM"></div>
+          </div>
+          <div class="bus" id="busEUAL1">
+            <div class="dataflux" id="dataEUAL1"></div>
+          </div>
+          <div class="bus" id="busEUAL2">
+            <div class="dataflux" id="dataEUAL2"></div>
+          </div>
+          <div class="bus" id="busACC">
+            <div class="dataflux" id="dataACC"></div>
+          </div>
+          <div class="bus" id="busRI">
+            <div class="dataflux" id="dataRI"></div>
+          </div>
+          <div class="bus" id="busCO">
+            <div class="dataflux" id="dataCO"></div> </div>
+          <div class="bus" id="busTDA">
+            <div class="dataflux" id="dataTDA"></div>
+          </div> 
+          <div class="bus" id="busREG1">
+            <div class="dataflux" id="dataREG1"></div>
+          </div>
+          <div class="bus" id="busREG2">
+            <div class="dataflux" id="dataREG2"></div>
+          </div>
+          <div class="bus" id="c1">
+            <div class="dataflux" id="dataC1"></div>
+          </div>
+          <div class="bus" id="c2">
+            <div class="dataflux" id="dataC2"></div>
+          </div>
+          <div class="bus" id="c3">
+            <div class="dataflux" id="dataC3"></div>
+          </div>
+          <div class="bus" id="c4">
+            <div class="dataflux" id="dataC4"></div>
+          </div>
+          <div class="bus" id="c5">
+            <div class="dataflux" id="dataC5"></div>
+          </div>
           <div class="bus" id="incco"></div>
           <div class="bus" id="LE"></div>
           <!--les instructions-->
@@ -150,10 +183,14 @@
           <div class="bus" id="mov"></div>
           <!---->
           <div class="decodeur" id="ual"></div>
-          <div class="decodeur" id="RIM"></div>
+          <div class="decodeur" id="RIM">
+            <p id="Rimcontent"></p>
+          </div>
           <div class="decodeur" id="RAM"></div>
           <div class="decodeur" id="SEQ"></div>
-          <div class="MC"></div>
+          <div class="MC">
+            <div class="caseMemoire" id="caseMemoire"></div>
+          </div>
           <div class="REG" id="CO"> </div>
           <div class="REG" id="RI"></div>
           <div class="REG" id="ACC"></div>
@@ -171,7 +208,6 @@
           <div class="REG" id="S"></div>
           <div class="REG" id="R"></div>
           <div class="REG" id="D"></div>
-          <div class="glow" id="g1"></div>
           <div class="glow" id="g2"></div>
           
   

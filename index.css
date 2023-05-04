@@ -1279,7 +1279,7 @@ border-radius: 4px;
   width: 160px;
 left: 925px;
 bottom: 174px;
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
 }
 #busRAM{
   width: 150px;
@@ -1297,7 +1297,7 @@ bottom: 140px;
   width: 135.02px;
 left: 600px;
 bottom: 545px;
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
 }
 #busREG{
   width: 340px;
@@ -1380,6 +1380,9 @@ bottom: 270px;
   border-right:  30px solid transparent;
   border-radius: 10px;
   color: #ae44a0;
+  text-align: center;
+  font-size:larger;
+  font-weight: bold;
 }
 #ual{
   width: 180px;
@@ -1391,7 +1394,13 @@ bottom: 270px;
   border-bottom: 50px solid #a7b6e3;
   bottom: 270px ;
   left:880px ;
+  text-align: center;
+  text-rendering: geometricPrecision;
   transform: rotate(180deg);
+}
+#RIM p{
+  transform: rotate(180deg);
+  margin: auto;
 }
 #RAM{
   width: 250px;
@@ -1416,6 +1425,18 @@ bottom: 270px;
   background:  #36539c;
   border-radius: 8px;
 }
+.caseMemoire{
+  position: absolute;
+  width: 250px;
+  height: 20px;
+  background-color:#4662c6;
+  text-align: center;
+  margin: auto;
+  top: 50%;
+  bottom: 50%;
+  font-size:larger;
+  font-weight: bold;
+}
 .REG{
   position:absolute;
   height: 25px;
@@ -1423,6 +1444,9 @@ bottom: 270px;
   border-radius: 4px;
   color: #ae60a3;
   box-shadow: white;
+  text-align: center;
+  font-size:larger;
+  font-weight: bold;
 }
 #CO{
   width: 210px;
@@ -1877,14 +1901,32 @@ ion-icon {
   left: 232px;
   top: 445px;  
 }
+.dataflux{
+  position: absolute;
+  background-color: #013e48;
+  width: 14px;
+  height: 13px;
+  border-radius: 5px;
+  margin: auto 0px;
+  top:0px;
+  left:0%;
+  right: 0%;
+  bottom: 0px;
+  filter: blur(5px);
+  visibility: hidden;
+
+}
 #g1{
   position: absolute;
-  background-color: #e3c715;
-  filter: blur(5px);
-  height: 20px;
-  width: 20px;
-  left: 658px;
-  top: 100px;
+  background-color: #018198;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin: auto 0px;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom: 0%;
 
 }
 #g2{
@@ -1898,22 +1940,40 @@ ion-icon {
   visibility: hidden;
 
 }
-@keyframes slidein{
+@keyframes slide-left{
   from {
-    margin-top: 50px;
+    margin-left: 0%;
   }
 
   to {
-    margin-top: 170px;
+    margin-left: 100%;
   }
 }
-@keyframes slide{
-  from{
-    margin-left: 500px;
-
+@keyframes slide-right{
+  from {
+    margin-left: 0%;
   }
-  to{
-    margin-left: 700px;
+
+  to {
+    margin-left:-100%;
+  }
+}
+@keyframes slide-top{
+  from {
+    margin-top: 0%;
+  }
+
+  to {
+    margin-top: 100%;
+  }
+}
+@keyframes slide-bottom{
+  from {
+    margin-bottom: 0%;
+  }
+
+  to {
+    margin-bottom: 100%;
   }
 }
 #bu{
